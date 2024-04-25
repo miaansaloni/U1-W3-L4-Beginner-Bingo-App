@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: auto;
+  /* margin: auto; */
 }
 
 body {
@@ -14,6 +14,7 @@ header {
 }
 
 h1 {
+  margin-top: 0px;
   text-align: center;
   font-size: 90px;
   color: brown;
@@ -23,9 +24,10 @@ h1 {
 
 #content {
   width: 70%;
-  height: 100vh;
+  /* height: 100vh; */
   margin-inline: auto;
   background-color: #ffb803b3;
+  padding-top: 2rem;
 }
 
 .table {
@@ -51,14 +53,36 @@ h1 {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #randNum {
   padding-inline: 3rem;
   padding-block: 1rem;
+  margin-inline-end: 2rem;
   font-size: large;
   border-radius: 10px;
   border-color: transparent;
   background-color: #219ebc;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: transform 0.3s ease;
+}
+
+#randNum:hover {
+  transform: scale(1.02);
+}
+
+#numDisplay {
+  background-color: aliceblue;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.884);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: bold;
 }
